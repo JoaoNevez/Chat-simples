@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat Simples (Fake Local)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="title">💬 Chat Simples</div>
+      <button id="clearBtn" title="Limpar histórico">Limpar</button>
+    </header>
+
+    <main id="messages" aria-live="polite"></main>
+
+    <div id="typing" class="typing hidden">
+      <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    </div>
+
+    <form id="form">
+      <input id="input" type="text" placeholder="Digite sua mensagem..." autocomplete="off" required />
+      <button id="sendBtn" type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <script src="dist/main.js" defer></script>
+</body>
+</html>
